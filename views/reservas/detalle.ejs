@@ -1,0 +1,38 @@
+<div class="area-seccion">
+    <p class="seccion-actual">
+        <%= seccion %>
+    </p>
+</div>
+
+<article class="detalle">
+    <p class="etiqueta">
+        Sala elegida: <strong>
+            <%= reserva.sala %>
+        </strong>
+    </p>
+
+    <h1>Reserva #<%= reserva.id %>
+    </h1>
+
+    <div class="datos-reserva">
+        <p><strong>Estudiante:</strong>
+            <%= reserva.estudiante %>
+        </p>
+        <p><strong>Email de contacto:</strong>
+            <%= reserva.email %>
+        </p>
+        <p><strong>Fecha asignada:</strong>
+            <%= reserva.fecha %>
+        </p>
+        <p><strong>Turno:</strong>
+            <%= reserva.turno %>
+        </p>
+        <p><strong>Cantidad de personas:</strong>
+            <%= reserva.personas %> de un máximo de 6
+        </p>
+    </div>
+
+    <div class="acciones">
+        <a href="/reservas" class="boton-volver">Volver al listado</a>
+    </div>
+</article>
